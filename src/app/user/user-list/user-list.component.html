@@ -1,0 +1,26 @@
+<section class="user-list-table">
+    <p>User list</p>
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <ng-container *ngFor="let i of displayedColumns">
+                    <th><p>{{i}}</p></th>
+                </ng-container>
+            </tr>
+            <tr *ngFor="let i of dataSource">
+                <td>{{i.sno}}</td>
+                <td>{{i.FirstName}}</td>
+                <td>{{i.LastName}}</td>
+                <td>{{i.Address}}</td>
+                <td>{{i.Email}}</td>
+                <td>{{i.Phone}}</td>    
+                <td>
+                    <div class="btn-wrapper">
+                        <button mat-raised-button color="primary" (click)="editUser(i)">Edit</button>
+                        <button mat-raised-button color="" (click)="deleteUser(i)">Delete</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>

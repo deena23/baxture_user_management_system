@@ -1,0 +1,40 @@
+<section class="user-upsert-container">
+    <div class="formwrapper">
+        <p>User Upsert</p>
+        <form class="form" [formGroup]="upsertForm">
+            <div class="inputs">
+                <mat-form-field appearance="outline" floatLabel="always">
+                    <mat-label>First Name</mat-label>
+                    <input matInput type="text" formControlName="FirstName">
+                </mat-form-field>
+            </div>
+            <div class="inputs">
+                <mat-form-field appearance="outline" floatLabel="always">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput type="text" formControlName="LastName">
+                </mat-form-field>
+            </div>
+            <div class="inputs">
+                <mat-form-field appearance="outline" floatLabel="always">
+                    <mat-label>Address</mat-label>
+                    <input matInput type="text" formControlName="Address">
+                </mat-form-field>
+            </div>
+            <div class="inputs">
+                <mat-form-field appearance="outline" floatLabel="always">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="Email">
+                </mat-form-field>
+            </div>
+            <div class="inputs">
+                <mat-form-field appearance="outline" floatLabel="always">
+                    <mat-label>Phone</mat-label>
+                    <input matInput id="phone-input" type="text" formControlName="Phone" maxlength="10">
+                </mat-form-field>
+            </div>
+            <div class="button-wrapper">
+                <button mat-raised-button color="primary" [disabled]="!upsertForm.valid" (click)="upsertUser()">Upsert</button>
+            </div>
+        </form>
+    </div>
+</section>

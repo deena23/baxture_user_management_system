@@ -1,0 +1,23 @@
+.user-upsert-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .formwrapper{
+        width: 350px;
+        padding: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        p{
+            color: var(--primary-clr);
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        form{
+            margin-top: 2rem;
+        }
+        .inputs mat-form-field{
+            width: 100%;
+        }
+    }
+}

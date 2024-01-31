@@ -1,0 +1,24 @@
+.app-header{
+    position: absolute;
+    width: 100%;
+    nav{
+        height: 50px;
+        background-color: var(--primary-clr);
+        line-height: 50px;
+        padding: 0 3.5rem;
+        display: flex;
+        justify-content: flex-end;
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+            li{
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
