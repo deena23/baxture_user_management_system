@@ -22,6 +22,13 @@ export class DataService{
         if(userIndex != -1) {
             this.userList.splice(userIndex, 1);
             this.notifySubject.next(true);
+            const dialogRef = this.matDialog.open(MsgDialogComponent, {
+                width: '30%',
+                height: '25%',
+                data: {
+                    message: 'Deleted Successfully'
+                }
+            });
         }
     }
 
